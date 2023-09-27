@@ -145,6 +145,11 @@ h5{
 
 <br>
 
+
+
+<!--ficha cadastral internacional-->
+<div id="internacional" class="form-group" style="margin: 0 auto; display: none;">
+<div  name="internacional" id="internacional" data-label="cad_internacional">
 <form class="form" action="" method="post" > 
 
   <label for="exampleFormControlInput1" class="form-label">CORPORATE NAME</label>
@@ -316,6 +321,10 @@ h5{
 </form>
 </div>
 </div>
+
+
+
+
 
 </body>
 </html>       
