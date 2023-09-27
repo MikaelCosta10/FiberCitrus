@@ -144,10 +144,198 @@ h5{
   <hr> 
 
 <br>
+<div class="form-group">
+        <label for ="quais_redes" id="quais_redes"></label>
+        <div class="col-sm-8">
+            <div class="form-check">
+                <input class="form-check-input" id="cad_nascional" type="radio" name="cad" value="1">
+                    Nacional
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="cad_internacional" type="radio" name="cad" value="2">
+                    Internacional
+            </div>
+        </div>
+  <!--Inicio do formulário nacional-->
+<div id="nacional" class="form-group" style="margin: 0 auto; display: none;">
+<div  name="cadastro" id="cadastro" data-label="cad_nascional">
+<form class="form" action="" method="post" > 
+
+  <label for="exampleFormControlInput1" class="form-label">RAZÃO SOCIAL</label>
+  <input type="text" class="form-control" name="razao" id="exampleFormControlInput1">
+  <label for="exampleFormControlInput1" class="form-label">NOME FANTASIA</label>
+  <input type="text" class="form-control" name="fantasia" id="exampleFormControlInput1">
+  <div class="row">
+   
+  <div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">CEP</label>
+  <input type="text" class="form-control" name="cep" id="cep" onblur="pesquisacep(this.value);">
+  </div>
+  <div class="col-md-8">
+  <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
+  <input type="text" class="form-control" name="endereco" id="endereco">
+</div>
+ 
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">NUMERO</label>
+  <input type="text" class="form-control" name="NUMERO" id="exampleFormControlInput1">
+  </div>
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
+  <input type="text" class="form-control" name="bairro" id="bairro">
+  </div>
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
+  <input type="text" class="form-control" name="cidade" id="cidade">
+  </div>
+
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
+  <input type="text" class="form-control" name="estado" id="estado">
+  </div>
+  <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">CNPJ</label>
+  <input type="text" class="form-control" name="cnpj" id="cnpj">
+  </div>
+  <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">IE</label>
+  <input type="text" class="form-control" name="ie" id="ie">
+  </div>
+  <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">TELEFONE</label>
+  <input type="text" class="form-control" name="telefone" id="telefone">
+  </div>
+  <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">CELULAR</label>
+  <input type="text" class="form-control" name="celular" id="celular">
+  </div>
+  <div class="col-md-6">
+    <label for="exampleFormControlInput1" class="form-label">E-MAIL</label>
+  <input type="email" class="form-control" name="email" id="email">
+  </div>
+  <div class="col-md-6">
+    <label for="exampleFormControlInput1" class="form-label">E-MAIL PARA ENVIO DE XML</label>
+  <input type="email" class="form-control" name="xml" id="xml">
+  </div>
+</div>
+  
+  <h5>ENDEREÇO DE COBRANÇA</h5>
+  <hr>
+
+  <!-- endereço de cobrança  -->
+<DIV CLASS="row">
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">CEP</label>
+    <input type="text" class="form-control" name="cep" >
+</div>
+<div class="col-md-8">
+    <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
+    <input type="text" class="form-control" name="endereco" >
+</div>
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">NUMERO</label>
+    <input type="text" class="form-control" name="NUMERO" >
+</div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
+    <input type="text" class="form-control" name="bairro" >
+</div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
+    <input type="text" class="form-control" name="cidade" >
+</div>
+
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
+  <input type="text" class="form-control" name="estado">
+  </div>
+</div>
+  <!--CADASTRO TIPO DE CLIENTE-->
+  <br>
+  <div class="row">
+  <label for="exampleFormControlInput1" class="form-label">TIPO</label>
+  <div class="col-md-2">
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="consumidor" >
+  <label class="form-label" for="flexRadioDefault1">
+    CONSUMIDOR FINAL
+  </label>
+</div>
+</div>
+<div class="col-md-2">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault"  value="produtor" >
+  <label class="form-label" for="flexRadioDefault2">
+    PRODUTOR RURAL
+  </label>
+</div>
+</div>
+<div class="col-md-2">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="revendedor"  >
+  <label class="form-label" for="flexRadioDefault2">
+    REVENDEDOR
+  </label>
+</div>
+</div>
+<div class="col-md-2">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="solidario"  >
+  <label class="form-label" for="flexRadioDefault2">
+    SOLIDÁRIO
+  </label>
+</div>
+</div>
+<div class="col-md-2">
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
+  <label class="form-label" for="flexRadioDefault2">
+    EXPORTAÇÃO
+  </label>
+</div>
+</div>
+</div>
+<hr>
+<label for="exampleFormControlInput1" class="form-label">FORMAS DE PAGAMENTO</label>
+<div class="row">
+  <div class="col-md-1">
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
+    <label class="form-label" for="flexRadioDefault2">
+    BOLETO
+    </label>
+</div>
+</div>
+<div class="col-md-1">
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
+    <label class="form-label" for="flexRadioDefault2">
+    PIX
+    </label>
+</div>
+</div>
+<div class="col-md-2">
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
+    <label class="form-label" for="flexRadioDefault2">
+    TRANFERÊNCIA BANCARIA
+    </label>
+</div>
+  </div>
 
 
+  <label for="exampleFormControlInput1" class="form-label">FORMAS DE PAGAMENTO</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</form>
+</div>
+</div>
+</div>
+</div>
 
 <!--ficha cadastral internacional-->
+<div id="internacional" class="form-group" style="margin: 0 auto; display: none;">
+<div  name="internacional" id="internacional" data-label="cad_internacional">
 <form class="form" action="" method="post" > 
 
   <label for="exampleFormControlInput1" class="form-label">CORPORATE NAME</label>
@@ -192,11 +380,11 @@ h5{
   </div>
   <div class="col-md-3">
     <label for="exampleFormControlInput1" class="form-label">PHONE</label>
-  <input type="text" class="form-control" name="telefone" id="telefone">
+  <input type="text" class="form-control" name="telefone" placeholder="Ex: +55169999-9999" id="telefone">
   </div>
   <div class="col-md-3">
     <label for="exampleFormControlInput1" class="form-label">CELL PHONE</label>
-  <input type="text" class="form-control" name="celular" id="celular">
+  <input type="text" class="form-control" placeholder="Ex: +55169999-9999" name="celular" id="celular">
   </div>
   <div class="col-md-6">
     <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
@@ -272,7 +460,7 @@ h5{
 <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" value="solidario"  >
   <label class="form-label" for="flexRadioDefault2">
-  SOLIDÁRIO
+  SOLIDARITY
   </label>
 </div>
 </div>
@@ -312,17 +500,41 @@ h5{
     </label>
 </div>
   </div>
+  <hr>
 
+  <h5>RESPONSIBLE CONTACT</h5>
+    <div class="row">
+    <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">NAME</label>
+  <input type="text" class="form-control" name="nome" id="nome">
+  </div>
+  <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">EMAIL</label>
+  <input type="email" class="form-control" name="email" id="email">
+  </div>
+    <div class="col-md-3">
+    <label for="exampleFormControlInput1" class="form-label">PHONE</label>
+  <input type="text" placeholder="Ex: +55169999-9999" class="form-control" name="telefone" id="telefone">
+  </div>
+    </div>
 
   <label for="exampleFormControlInput1" class="form-label">OBSERVATION</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </form>
 </div>
 </div>
-
+</div>
+</div>
 
 
 
 
 </body>
 </html>       
+<SCRIPT type="text/javascript">
+
+$('.col-sm-8 input[type="radio"]').change(function(){
+        let name = this.id
+        $('[data-label="' + name + '"]').parent().css('display', this.checked ? '' : 'none' )
+    })
+    </script>
