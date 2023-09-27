@@ -144,21 +144,7 @@ h5{
   <hr> 
 
 <br>
-<div class="form-group">
-        <label for ="quais_redes" id="quais_redes"></label>
-        <div class="col-sm-8">
-            <div class="form-check">
-                <input class="form-check-input" id="cad_nascional" type="radio" name="cad[]" value="1">
-                    Nacional
-            </div>
 
-            <div class="form-check">
-                <input class="form-check-input" id="cad_internacional" type="radio" name="cad[]" value="2">
-                    Internacional
-            </div>
-        </div>
-  <!--Inicio do formulário nacional-->
-<div id="nacional" class="form-group" style="margin: 0 auto; display: none;">
 <div  name="cadastro" id="cadastro" data-label="cad_nascional">
 <form class="form" action="" method="post" > 
 
@@ -324,7 +310,6 @@ h5{
 </form>
 </div>
 </div>
-</div>
-</div>
+
 </body>
 </html>
