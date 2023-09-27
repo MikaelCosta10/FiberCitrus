@@ -89,7 +89,7 @@
     };
 
     </script>
-    <title>Ficha Cadastral</title>
+    <title>Registration Form</title>
 </head>
 <body>
 
