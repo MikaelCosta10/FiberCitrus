@@ -144,7 +144,7 @@ h5{
   <hr> 
 
 <br>
-<div id="internacional" class="form-group" style="margin: 0 auto; display: none;">
+<div id="internacional" class="form-group">
 <div  name="internacional" id="internacional" data-label="cad_internacional">
 <form class="form" action="" method="post" > 
 
