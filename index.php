@@ -165,7 +165,7 @@ h5{
 </div>
  
 <div class="col-md-2">
-    <label for="exampleFormControlInput1" class="form-label">NUMERO</label>
+    <label for="exampleFormControlInput1" class="form-label">NÚMERO</label>
   <input type="text" class="form-control" name="NUMERO" id="exampleFormControlInput1">
   </div>
   <div class="col-md-4">
@@ -206,38 +206,23 @@ h5{
   <input type="email" class="form-control" name="xml" id="xml">
   </div>
 </div>
-  
-  <h5>ENDEREÇO DE COBRANÇA</h5>
   <hr>
-
-  <!-- endereço de cobrança  -->
-<DIV CLASS="row">
-<div class="col-md-2">
-    <label for="exampleFormControlInput1" class="form-label">CEP</label>
-    <input type="text" class="form-control" name="cep" >
+  <h5>CONTATO RESPONSÁVEL</h5>
+  <div class="row">
+  <div class="col-md-3">
+  <label for="exampleFormControlInput1" class="form-label">NOME</label>
+<input type="text" class="form-control" name="nome" id="nome">
 </div>
-<div class="col-md-8">
-    <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
-    <input type="text" class="form-control" name="endereco" >
+<div class="col-md-3">
+  <label for="exampleFormControlInput1" class="form-label">E-MAIL</label>
+<input type="email" class="form-control" name="email" id="email">
 </div>
-<div class="col-md-2">
-    <label for="exampleFormControlInput1" class="form-label">NUMERO</label>
-    <input type="text" class="form-control" name="NUMERO" >
+  <div class="col-md-3">
+  <label for="exampleFormControlInput1" class="form-label">TELEFONE</label>
+<input type="text" placeholder="Ex: +55169999-9999" class="form-control" name="telefone" id="telefone">
 </div>
-<div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
-    <input type="text" class="form-control" name="bairro" >
-</div>
-<div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
-    <input type="text" class="form-control" name="cidade" >
-</div>
-
-  <div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
-  <input type="text" class="form-control" name="estado">
   </div>
-</div>
+  
   <!--CADASTRO TIPO DE CLIENTE-->
   <br>
   <div class="row">
@@ -290,27 +275,46 @@ h5{
   </div>
   <hr>
 
-<h5>CONTATO RESPONSÁVEL</h5>
-  <div class="row">
-  <div class="col-md-3">
-  <label for="exampleFormControlInput1" class="form-label">NOME</label>
-<input type="text" class="form-control" name="nome" id="nome">
+  <h5>ENDEREÇO DE COBRANÇA</h5>
+
+
+  <!-- endereço de cobrança  -->
+<DIV CLASS="row">
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">CEP</label>
+    <input type="text" class="form-control" name="cepC" >
 </div>
-<div class="col-md-3">
-  <label for="exampleFormControlInput1" class="form-label">E-MAIL</label>
-<input type="email" class="form-control" name="email" id="email">
+<div class="col-md-8">
+    <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
+    <input type="text" class="form-control" name="enderecoC" >
 </div>
-  <div class="col-md-3">
-  <label for="exampleFormControlInput1" class="form-label">TELEFONE</label>
-<input type="text" placeholder="Ex: +55169999-9999" class="form-control" name="telefone" id="telefone">
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">NÚMERO</label>
+    <input type="text" class="form-control" name="numeroC" >
 </div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
+    <input type="text" class="form-control" name="bairroC" >
+</div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
+    <input type="text" class="form-control" name="cidadeC" >
+</div>
+
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
+  <input type="text" class="form-control" name="estadoC">
   </div>
+</div>
+
+
+
+
 
   <label for="exampleFormControlInput1" class="form-label">OBSERVAÇÕES</label>
   <textarea class="form-control"  id="exampleFormControlTextarea1" rows="3"></textarea>
 </form>
 </div>
 </div>
-
 </body>
 </html>
