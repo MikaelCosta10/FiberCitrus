@@ -144,8 +144,7 @@ h5{
   <hr> 
 
 <br>
-<div id="internacional" class="form-group">
-<div  name="internacional" id="internacional" data-label="cad_internacional">
+
 <form class="form" action="" method="post" > 
 
   <label for="exampleFormControlInput1" class="form-label">CORPORATE NAME</label>
@@ -317,15 +316,6 @@ h5{
 </form>
 </div>
 </div>
-</div>
-</div>
 
 </body>
 </html>       
-<SCRIPT type="text/javascript">
-
-$('.col-sm-8 input[type="radio"]').change(function(){
-        let name = this.id
-        $('[data-label="' + name + '"]').parent().css('display', this.checked ? '' : 'none' )
-    })
-    </script>
