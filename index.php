@@ -268,11 +268,7 @@ h5{
 </div>
 </div>
 </div>
-<hr>
-<label for="exampleFormControlInput1" class="form-label">REFERÊNCIA BANCARIA</label>
-<div class="row">
-  <textarea class="form-control" placeholder="Ex: Banco: Brasil Conta: xxxxxx-x Agencia: xxxx-x" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+
   <hr>
 
   <h5>ENDEREÇO DE COBRANÇA</h5>
@@ -307,7 +303,11 @@ h5{
   </div>
 </div>
 
-
+<hr>
+<label for="exampleFormControlInput1" class="form-label">REFERÊNCIA BANCARIA</label>
+<div class="row">
+  <textarea class="form-control" placeholder="Ex: Banco: Brasil Conta: xxxxxx-x Agencia: xxxx-x" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
 
 
 
@@ -316,5 +316,5 @@ h5{
 </form>
 </div>
 </div>
-</body>
-</html>
+</div>
+</div>
