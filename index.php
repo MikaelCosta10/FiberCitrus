@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<style type="text/css">
+
+    </style>
+
+
+        <!DOCTYPE html>
 <html lang="pt">
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -6,6 +11,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -127,6 +133,7 @@ h5{
 
 </style>
 
+
 <div class="container">
   <br><Br><br><br>
 <CENTER>
@@ -137,7 +144,23 @@ h5{
   <hr> 
 
 <br>
-<form class="form" action="" method="post"> 
+<div class="form-group">
+        <label for ="quais_redes" id="quais_redes"></label>
+        <div class="col-sm-8">
+            <div class="form-check">
+                <input class="form-check-input" id="cad_nascional" type="radio" name="cad[]" value="1">
+                    Nacional
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" id="cad_internacional" type="radio" name="cad[]" value="2">
+                    Internacional
+            </div>
+        </div>
+  <!--Inicio do formulário nacional-->
+<div id="nacional" class="form-group" style="margin: 0 auto; display: none;">
+<div  name="cadastro" id="cadastro" data-label="cad_nascional">
+<form class="form" action="" method="post" > 
 
   <label for="exampleFormControlInput1" class="form-label">RAZÃO SOCIAL</label>
   <input type="text" class="form-control" name="razao" id="exampleFormControlInput1">
@@ -227,9 +250,10 @@ h5{
     <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
   <input type="text" class="form-control" name="estado">
   </div>
-
+</div>
   <!--CADASTRO TIPO DE CLIENTE-->
-  
+  <br>
+  <div class="row">
   <label for="exampleFormControlInput1" class="form-label">TIPO</label>
   <div class="col-md-2">
   <div class="form-check">
@@ -273,38 +297,34 @@ h5{
 </div>
 </div>
 <hr>
-<label for="exampleFormControlInput1" class="form-label">FORMAS DE PAGAMENTO</label>
+<label for="exampleFormControlInput1" class="form-label">REFERÊNCIA BANCARIA</label>
 <div class="row">
-  <div class="col-md-1">
-    <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
-    <label class="form-label" for="flexRadioDefault2">
-    BOLETO
-    </label>
-</div>
-</div>
-<div class="col-md-1">
-    <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
-    <label class="form-label" for="flexRadioDefault2">
-    PIX
-    </label>
-</div>
+  <textarea class="form-control" placeholder="Ex: Banco: Brasil Conta: xxxxxx-x Agencia: xxxx-x" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <hr>
+
+<h5>CONTATO RESPONSÁVEL</h5>
+  <div class="row">
+  <div class="col-md-3">
+  <label for="exampleFormControlInput1" class="form-label">NOME</label>
+<input type="text" class="form-control" name="nome" id="nome">
 </div>
 <div class="col-md-3">
-    <div class="form-check">
-    <input class="form-check-input" type="radio" name="flexRadioDefault" value="exportacao">
-    <label class="form-label" for="flexRadioDefault2">
-    DADOS BBANCARIOS
-    </label>
+  <label for="exampleFormControlInput1" class="form-label">E-MAIL</label>
+<input type="email" class="form-control" name="email" id="email">
+</div>
+  <div class="col-md-3">
+  <label for="exampleFormControlInput1" class="form-label">TELEFONE</label>
+<input type="text" placeholder="Ex: +55169999-9999" class="form-control" name="telefone" id="telefone">
 </div>
   </div>
 
-
-<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <label for="exampleFormControlInput1" class="form-label">OBSERVAÇÕES</label>
+  <textarea class="form-control"  id="exampleFormControlTextarea1" rows="3"></textarea>
 </form>
-
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>
