@@ -222,8 +222,42 @@ h5{
 <input type="text" placeholder="Ex: +55169999-9999" class="form-control" name="telefone" id="telefone">
 </div>
   </div>
-  
-  <!--CADASTRO TIPO DE CLIENTE-->
+  <hr>
+
+  <h5>ENDEREÇO DE COBRANÇA</h5>
+
+
+  <!-- endereço de cobrança  -->
+<DIV CLASS="row">
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">CEP</label>
+    <input type="text" class="form-control" name="cepC" >
+</div>
+<div class="col-md-8">
+    <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
+    <input type="text" class="form-control" name="enderecoC" >
+</div>
+<div class="col-md-2">
+    <label for="exampleFormControlInput1" class="form-label">NÚMERO</label>
+    <input type="text" class="form-control" name="numeroC" >
+</div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
+    <input type="text" class="form-control" name="bairroC" >
+</div>
+<div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
+    <input type="text" class="form-control" name="cidadeC" >
+</div>
+
+  <div class="col-md-4">
+    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
+  <input type="text" class="form-control" name="estadoC">
+  </div>
+</div>
+
+<hr>
+     <!--CADASTRO TIPO DE CLIENTE-->
   <br>
   <div class="row">
   <label for="exampleFormControlInput1" class="form-label">TIPO</label>
@@ -268,46 +302,11 @@ h5{
 </div>
 </div>
 </div>
-
-  <hr>
-
-  <h5>ENDEREÇO DE COBRANÇA</h5>
-
-
-  <!-- endereço de cobrança  -->
-<DIV CLASS="row">
-<div class="col-md-2">
-    <label for="exampleFormControlInput1" class="form-label">CEP</label>
-    <input type="text" class="form-control" name="cepC" >
-</div>
-<div class="col-md-8">
-    <label for="exampleFormControlInput1" class="form-label">ENDEREÇO</label>
-    <input type="text" class="form-control" name="enderecoC" >
-</div>
-<div class="col-md-2">
-    <label for="exampleFormControlInput1" class="form-label">NÚMERO</label>
-    <input type="text" class="form-control" name="numeroC" >
-</div>
-<div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">BAIRRO</label>
-    <input type="text" class="form-control" name="bairroC" >
-</div>
-<div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">CIDADE</label>
-    <input type="text" class="form-control" name="cidadeC" >
-</div>
-
-  <div class="col-md-4">
-    <label for="exampleFormControlInput1" class="form-label">ESTADO</label>
-  <input type="text" class="form-control" name="estadoC">
-  </div>
-</div>
-
-<hr>
+    <hr>
 <label for="exampleFormControlInput1" class="form-label">REFERÊNCIA BANCARIA</label>
-<div class="row">
+
   <textarea class="form-control" placeholder="Ex: Banco: Brasil Conta: xxxxxx-x Agencia: xxxx-x" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+
 
 
 
